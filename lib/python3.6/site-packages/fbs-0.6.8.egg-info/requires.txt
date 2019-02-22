@@ -1,0 +1,7 @@
+boto3
+
+[licensing]
+rsa>=3.4.2
+
+[sentry]
+sentry-sdk>=0.6.6
