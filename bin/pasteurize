@@ -1,4 +1,4 @@
-#!/home/lucifer/dev/fbsenv/bin/python3
+#!/home/lucifer/dev/clipq/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'future==0.17.1','console_scripts','pasteurize'
 __requires__ = 'future==0.17.1'
 import re

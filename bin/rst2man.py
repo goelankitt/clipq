@@ -1,4 +1,4 @@
-#!/home/lucifer/dev/fbsenv/bin/python3
+#!/home/lucifer/dev/clipq/bin/python3
 
 # Author: 
 # Contact: grubert@users.sf.net

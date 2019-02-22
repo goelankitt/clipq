@@ -1,4 +1,4 @@
-#!/home/lucifer/dev/fbsenv/bin/python3
+#!/home/lucifer/dev/clipq/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'PyInstaller==3.4','console_scripts','pyi-makespec'
 __requires__ = 'PyInstaller==3.4'
 import re
