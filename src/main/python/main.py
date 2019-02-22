@@ -1,5 +1,4 @@
 from fbs_runtime.application_context import ApplicationContext, cached_property
-# from PyQt5.QtWidgets import QMainWindow
 
 import sys
 from PyQt5.Qt import QApplication, QClipboard
@@ -95,14 +94,13 @@ class ClipqSystemTray(QSystemTrayIcon):
     def show_parent(self, something):
         self.parent.show()
 
-class AppContext(ApplicationContext):           # 1. Subclass ApplicationContext
-    def run(self):                              # 2. Implement run()
+class AppContext(ApplicationContext):
+    def run(self):
         window = ClipqWindow(self)
         version = self.build_settings['version']
         window.setWindowTitle("clipq v" + version)
-        # window.resize(250, 150)
         window.show()
-        return self.app.exec_()                 # 3. End run() with this line
+        return self.app.exec_()
     
     @cached_property
     def img_icon(self):
@@ -110,7 +108,7 @@ class AppContext(ApplicationContext):           # 1. Subclass ApplicationContext
 
 
 if __name__ == '__main__':
-    appctxt = AppContext()                      # 4. Instantiate the subclass
+    appctxt = AppContext()
     appctxt.app.setQuitOnLastWindowClosed(False)
-    exit_code = appctxt.run()                   # 5. Invoke run()
+    exit_code = appctxt.run()
     sys.exit(exit_code)
